@@ -4,7 +4,7 @@
 This project is about creating a portfolio website that contains links to some of my project, some personal details, contact information and a link to my CV.
 
 ## Screenshot
-![Screenshot of the deployed website](/assets/images/screenshot.jpg)
+![Screenshot of the deployed website](/assets/images/screenshot.png)
 
 ## Links
 [Link to the deployed website](https://nyitrai87.github.io/adam-nyitrai-portfolio/)
