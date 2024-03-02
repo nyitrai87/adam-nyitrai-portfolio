@@ -3,10 +3,10 @@
 }
 
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: Helvetica;
+    box-sizing: border-box;
 }
 
 main {
@@ -22,12 +22,12 @@ main {
     background-color: #000;
 }
 
-#navBar h1 {
+#name {
+    padding-left: 20px;
     display: flex;
     width: 50%;
     font-size: 60px;
     color: #fff;
-    ;
     align-items: center;
 }
 
@@ -124,4 +124,85 @@ h2 {
     height: 35px;
     color: white;
     font-size: 18px;
+}
+
+#contact {
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    #name {
+        font-size: medium !important;
+        width: fit-content !important;
+        padding-left: 10px;
+    }
+
+    #navigation {
+        display: flex;
+        width: 100% !important;
+        justify-content: space-between;
+        padding-right: 10px;
+    }
+
+    #headshot {
+        height: 30vw !important;
+        margin: 5px 5px 0 0;
+    }
+
+    #projects {
+        padding-left: 0 !important;
+        display: grid;
+        grid-template-rows: 200px 200px 200px 200px 200px !important;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "hori"
+            "cs1"
+            "cs2"
+            "cs3"
+            "cs4"
+        ;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    main {
+        height: 100vh;
+    }
+
+    #name {
+        font-size: xx-large;
+    }
+
+    #navBar {
+        height: 64px;
+    }
+
+    #intro {
+        padding: 5px 20px 0 0;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        border-right: none;
+        border-bottom: 2px solid #000;
+        width: 100%;
+    }
+
+    #headshot {
+        height: 15vw;
+        margin: 5px 5px 0 0;
+    }
+
+    #projects {
+        padding-left: 0 !important;
+        grid-template-rows: 200px 200px 200px;
+    }
+
+    #contact-det {
+        padding-top: 5px;
+    }
 }
